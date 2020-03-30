@@ -2,5 +2,5 @@
 Repository intended for Data Analysis over International Problems
 
 # Summary:
-- Brazil
-  - COVID-19 Analysis
+- COVID-19 Analysis
+  - COVID-19_Brazil
