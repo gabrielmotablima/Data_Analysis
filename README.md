@@ -1,4 +1,4 @@
-# International_Analysis
+# International Analysis
 Repository intended for Data Analysis over International Problems
 
 # Summary:
