@@ -7,14 +7,19 @@
 import numpy as np
 import pandas as pd
 
+# Dataset paths
+deaths = 'novel-corona-virus-2019-dataset/time_series_covid_19_deaths.csv'
+confirmed = 'novel-corona-virus-2019-dataset/time_series_covid_19_confirmed.csv'
+recovered = 'novel-corona-virus-2019-dataset/time_series_covid_19_recovered.csv'
+
 # Importing the datasets
-dataset_deaths = pd.read_csv("/novel-corona-virus-2019-dataset/time_series_covid_19_deaths.csv")
+dataset_deaths = pd.read_csv(deaths)
 dataset_deaths = dataset_deaths.iloc[:].values
 
-dataset_confirmed = pd.read_csv("/novel-corona-virus-2019-dataset/time_series_covid_19_confirmed.csv")
+dataset_confirmed = pd.read_csv(confirmed)
 dataset_confirmed = dataset_confirmed.iloc[:].values
 
-dataset_recovered = pd.read_csv("/novel-corona-virus-2019-dataset/time_series_covid_19_recovered.csv")
+dataset_recovered = pd.read_csv(recovered)
 dataset_recovered = dataset_recovered.iloc[:].values
 
 # Getting the Brazil COVID-19 data
@@ -44,7 +49,7 @@ grid(True)
 show()
 
 
-#
+##############################################################################################################
 deaths_per_day = []
 confirmed_per_day = []
 recovered_per_day = []
