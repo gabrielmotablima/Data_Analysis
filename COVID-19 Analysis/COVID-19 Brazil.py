@@ -31,7 +31,7 @@ unit_per_day = []
 for i in range(len(deaths_brazil[4:])):
     unit_per_day.append(i)
     
-#
+##############################################################################################################
 from pylab import *
 plot(unit_per_day, deaths_brazil[4:], 'red')
 plot(unit_per_day, confirmed_brazil[4:], 'orange')
@@ -58,7 +58,7 @@ for i in range(1, len(deaths_brazil[4:])):
     confirmed_per_day.append(confirmed_brazil[4+i] - confirmed_brazil[3+i])
     recovered_per_day.append(recovered_brazil[4+i] - recovered_brazil[3+i])
 
-#
+##############################################################################################################
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
@@ -91,7 +91,7 @@ fig.tight_layout()
 
 plt.show()
 
-#
+##############################################################################################################
 x = np.arange(len(unit_per_day[-20:]))  # the label locations
 width = 0.35  # the width of the bars
 
@@ -99,7 +99,6 @@ fig, ax = plt.subplots()
 rects1 = ax.bar(x - width/2, deaths_per_day[-20:], width, label='deaths', color = 'red')
 rects2 = ax.bar(x + width/2, recovered_per_day[-20:], width, label='recovered', color = 'green')
 
-# Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('Red - Deaths\nGreen - Recovered')
 ax.set_title('Covid-19 in Brazil - Occurrences per Day (last 20 days)')
 ax.set_xticks(x)
